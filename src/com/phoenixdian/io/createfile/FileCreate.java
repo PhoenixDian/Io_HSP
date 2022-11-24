@@ -41,11 +41,20 @@ public class FileCreate {
     }
 
     /**
-     * method 3
+     * method 3 new File(String parentPath,String childPath)
      */
     @Test
     public void test03(){
-
+        String parentPath="d:"+File.separator;
+        String childPath="test3.txt";
+        File file = new File(parentPath, childPath);
+        try {
+            if (file.createNewFile()) {
+                System.out.println("success");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }
