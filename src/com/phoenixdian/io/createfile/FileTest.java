@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.io.File;
 import java.io.IOException;
 
-public class FileCreate {
+public class FileTest {
 
     /**
      * method 1 new File(String pathName)
